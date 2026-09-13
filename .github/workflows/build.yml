@@ -1,0 +1,35 @@
+name: Build LaTeX Documents
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX documents
+        uses: xu-cheng/latex-action@v3
+        with:
+          run_by_root: true
+          root_file: |
+            examples/resume.tex
+            examples/cv.tex
+            examples/coverletter.tex
+          latexmk_use_xelatex: true
+          args: -output-directory=examples
+
+      - name: Upload PDF Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: awesome-cv-pdfs
+          path: |
+            examples/resume.pdf
+            examples/cv.pdf
+            examples/coverletter.pdf

@@ -10,6 +10,9 @@
 
 ## Intermediate documents:
 *.dvi
+*.xdv
+*.fdb_latexmk
+*.synctex.gz
 *-converted-to.*
 
 ### Editor ###
@@ -20,4 +23,7 @@
 ### Mac OS X ###
 ## Mac OS X metadata files:
 *.DS_Store
+
+### Local Tooling ###
+.rtk/
 
