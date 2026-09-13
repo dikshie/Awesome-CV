@@ -5,6 +5,7 @@
 .gemini
 .cursor
 .aider*
+.agent*
 *.aux
 *.log
 *.out

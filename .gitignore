@@ -25,10 +25,11 @@
 *.DS_Store
 
 ### Local Assistant Tools ###
-.rtk/*
-!.rtk/filters.toml
+.rtk/
 .claude/
 .gemini/
 .cursor/
 .aider*
+.agent/
+.agents/
 
