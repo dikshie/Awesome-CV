@@ -1,0 +1,11 @@
+services:
+  awesome-cv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: awesome-cv:latest
+    container_name: awesome-cv
+    user: "${UID:-1000}:${GID:-1000}"
+    volumes:
+      - .:/workdir
+    command: ["all"]

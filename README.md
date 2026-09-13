@@ -84,6 +84,15 @@ rtk make -B all
 rtk make clean
 ```
 
+### Build with Docker (No Local TeX Installation Required)
+```bash
+# Build the Docker image
+rtk make docker-build
+
+# Compile all documents using Docker
+rtk make docker-all
+```
+
 ---
 
 ## Automated Releases

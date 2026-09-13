@@ -47,6 +47,29 @@ rtk make -B all
 rtk make clean
 ```
 
+### Containerized Build (Docker)
+If you don't have XeLaTeX installed locally or want a completely isolated build environment, use Docker:
+
+```bash
+# 1. Build the Docker image
+rtk make docker-build
+# or
+rtk docker build -t awesome-cv .
+
+# 2. Compile all documents inside container
+rtk make docker-all
+# or
+rtk docker run --rm -u $(id -u):$(id -g) -v "$(pwd)":/workdir awesome-cv make all
+
+# Or using Docker Compose:
+rtk docker compose run --rm awesome-cv make all
+
+# Compile individual documents
+rtk make docker-resume
+rtk make docker-cv
+rtk make docker-coverletter
+```
+
 ### Preview Image Generation
 If updating preview screenshots for `README.md`:
 ```bash
