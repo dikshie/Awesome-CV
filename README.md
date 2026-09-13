@@ -66,31 +66,30 @@ For detailed workflow documentation, local compilation, and release instructions
 * Bundled fonts in `fonts/` (Roboto and FontAwesome)
 
 ### Build Commands
-Prefix commands with `rtk` (Rust Token Killer) for optimized terminal output:
 
 ```bash
 # Build all documents
-rtk make all
+make all
 
 # Build individual documents
-rtk make resume
-rtk make cv
-rtk make coverletter
+make resume
+make cv
+make coverletter
 
 # Force clean rebuild
-rtk make -B all
+make -B all
 
 # Clean temporary build artifacts
-rtk make clean
+make clean
 ```
 
 ### Build with Docker (No Local TeX Installation Required)
 ```bash
 # Build the Docker image
-rtk make docker-build
+make docker-build
 
 # Compile all documents using Docker
-rtk make docker-all
+make docker-all
 ```
 
 ---
@@ -100,8 +99,8 @@ rtk make docker-all
 Pushing an annotated git tag automatically triggers the GitHub Actions release workflow to compile the documents and attach `resume.pdf`, `cv.pdf`, and `coverletter.pdf` to a new release:
 
 ```bash
-rtk git tag v1.0.1 -m "Release v1.0.1"
-rtk git push origin v1.0.1
+git tag v1.0.1 -m "Release v1.0.1"
+git push origin v1.0.1
 ```
 
 See [**WORKFLOW.md**](WORKFLOW.md) for step-by-step guidance.

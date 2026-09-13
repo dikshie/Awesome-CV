@@ -29,22 +29,21 @@ When personal information, job titles, or contact info change, verify all three 
 * Bundled fonts in `fonts/` (Roboto and FontAwesome)
 
 ### Makefile Commands
-Run with `rtk` prefix to optimize terminal output:
 
 ```bash
 # Compile all documents (resume, cv, coverletter)
-rtk make all
+make all
 
 # Compile individual documents
-rtk make resume
-rtk make cv
-rtk make coverletter
+make resume
+make cv
+make coverletter
 
 # Force a clean rebuild from scratch
-rtk make -B all
+make -B all
 
 # Clean intermediate auxiliary files (*.aux, *.log, *.out, *.xdv, etc.) and PDFs
-rtk make clean
+make clean
 ```
 
 ### Containerized Build (Docker)
@@ -52,29 +51,29 @@ If you don't have XeLaTeX installed locally or want a completely isolated build 
 
 ```bash
 # 1. Build the Docker image
-rtk make docker-build
+make docker-build
 # or
-rtk docker build -t awesome-cv .
+docker build -t awesome-cv .
 
 # 2. Compile all documents inside container
-rtk make docker-all
+make docker-all
 # or
-rtk docker run --rm -u $(id -u):$(id -g) -v "$(pwd)":/workdir awesome-cv make all
+docker run --rm -u $(id -u):$(id -g) -v "$(pwd)":/workdir awesome-cv make all
 
 # Or using Docker Compose:
-rtk docker compose run --rm awesome-cv make all
+docker compose run --rm awesome-cv make all
 
 # Compile individual documents
-rtk make docker-resume
-rtk make docker-cv
-rtk make docker-coverletter
+make docker-resume
+make docker-cv
+make docker-coverletter
 ```
 
 ### Preview Image Generation
 If updating preview screenshots for `README.md`:
 ```bash
 # macOS sips tool
-rtk sips -s format png examples/coverletter.pdf --out examples/coverletter-1.png
+sips -s format png examples/coverletter.pdf --out examples/coverletter-1.png
 ```
 
 ---
@@ -111,7 +110,7 @@ Follow these steps to publish a new release:
 Edit the relevant `.tex` files in `examples/resume/`, `examples/cv/`, or `examples/coverletter.tex`.
 Test compilation locally:
 ```bash
-rtk make -B all
+make -B all
 ```
 Verify page budgets:
 * `coverletter.pdf`: 1 page
@@ -120,24 +119,24 @@ Verify page budgets:
 
 ### Step 2: Commit Working Tree Changes
 ```bash
-rtk git add examples/ .gitignore
-rtk git commit -m "Update experience and align CV sections"
+git add examples/ .gitignore
+git commit -m "Update experience and align CV sections"
 ```
 
 ### Step 3: Push to Master
 ```bash
-rtk git push origin master
+git push origin master
 ```
 
 ### Step 4: Tag the Release
 Create an annotated semantic version tag:
 ```bash
-rtk git tag v1.0.1 -m "Release v1.0.1: Update experience and certifications"
+git tag v1.0.1 -m "Release v1.0.1: Update experience and certifications"
 ```
 
 ### Step 5: Push the Tag to Trigger Release
 ```bash
-rtk git push origin v1.0.1
+git push origin v1.0.1
 ```
 
 ### Step 6: Monitor & Verify
@@ -150,9 +149,5 @@ rtk git push origin v1.0.1
 
 ## 5. Local Assistant Tools & Git Configuration
 
-* **RTK (Rust Token Killer)**:
-  * Rule: Always prefix shell commands with `rtk` (e.g., `rtk git status`, `rtk make all`).
-  * Configuration: [`.rtk/filters.toml`](.rtk/filters.toml) is committed with the repository.
 * **`.gitignore` Rules**:
-  * `.rtk/*` ignores transient local RTK files while `!.rtk/filters.toml` ensures project filter configuration is tracked.
   * Local assistant metadata directories (`.claude/`, `.gemini/`, `.cursor/`, `.aider*`) are ignored to prevent leaking local assistant session state.
