@@ -24,6 +24,11 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
-### Local Tooling ###
-.rtk/
+### Local Assistant Tools ###
+.rtk/*
+!.rtk/filters.toml
+.claude/
+.gemini/
+.cursor/
+.aider*
 

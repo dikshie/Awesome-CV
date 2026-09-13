@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+      - '[0-9]+.*'
+      - '[0-9]+'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Compile LaTeX documents
+        uses: xu-cheng/latex-action@v3
+        with:
+          run_by_root: true
+          root_file: |
+            examples/resume.tex
+            examples/cv.tex
+            examples/coverletter.tex
+          latexmk_use_xelatex: true
+          args: -output-directory=examples
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            examples/resume.pdf
+            examples/cv.pdf
+            examples/coverletter.pdf
+          generate_release_notes: true
