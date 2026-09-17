@@ -3,19 +3,21 @@
 **Candidate**: Mohamad Dikshie Fauzie, Ph.D.  
 **Current Baseline**: Data Center Engineer (Co-Manager), Japannext Co., Ltd., Tokyo  
 **Repositioned Stature**: Principal Infrastructure Architect · Low-Latency & Distributed Systems  
-**Document Purpose**: Comprehensive career advancement audit, 15 hidden non-financial roles, 26 transferable skills taxonomy, and strategic execution roadmap.
+**Document Purpose**: Comprehensive career advancement audit: Tier-0 Ultra-Low-Latency Financial & HFT Market Infrastructure, 15 hidden deep-tech non-financial roles, 26 transferable skills taxonomy, and strategic execution roadmap.
 
 ---
 
 ## Table of Contents
 1. [Executive Summary & The Ruthless Recruiter Diagnosis](#1-executive-summary--the-ruthless-recruiter-diagnosis)
-2. [The 15 Hidden Non-Financial Roles Ranking Matrix](#2-the-15-hidden-non-financial-roles-ranking-matrix)
-3. [Deep-Dive Analysis of the 15 Hidden Career Opportunities](#3-deep-dive-analysis-of-the-15-hidden-career-opportunities)
-4. [The 26 Transferable Skills Deconstruction (5 Pillars)](#4-the-26-transferable-skills-deconstruction-5-pillars)
-5. [The 5 Realistic Career Pivot Paths & 30-Day Transition Blueprints](#5-the-5-realistic-career-pivot-paths--30-day-transition-blueprints)
-6. [The 10 High-Value Non-Financial Industries Ranked](#6-the-10-high-value-non-financial-industries-ranked)
-7. [The LaTeX CV & Narrative Overhaul Summary](#7-the-latex-cv--narrative-overhaul-summary)
-8. [Strategic Execution Roadmap (30-60-90 Day Plan)](#8-strategic-execution-roadmap-30-60-90-day-plan)
+2. [Strategic Context: Why Non-Financial Roles Were Audited & The Financial Blind Spot](#2-strategic-context-why-non-financial-roles-were-audited--the-financial-blind-spot)
+3. [Tier-0 Track: Ultra-Low-Latency Financial Trading & Market-Making Infrastructure](#3-tier-0-track-ultra-low-latency-financial-trading--market-making-infrastructure)
+4. [The 15 Hidden Non-Financial Roles Ranking Matrix](#4-the-15-hidden-non-financial-roles-ranking-matrix)
+5. [Deep-Dive Analysis of the 15 Hidden Career Opportunities](#5-deep-dive-analysis-of-the-15-hidden-career-opportunities)
+6. [The 26 Transferable Skills Deconstruction (5 Pillars)](#6-the-26-transferable-skills-deconstruction-5-pillars)
+7. [The 5 Realistic Career Pivot Paths & 30-Day Transition Blueprints](#7-the-5-realistic-career-pivot-paths--30-day-transition-blueprints)
+8. [The High-Value Industry Ranking Hierarchy (Tier-0 to Tier-3)](#8-the-high-value-industry-ranking-hierarchy-tier-0-to-tier-3)
+9. [The LaTeX CV & Narrative Overhaul Summary](#9-the-latex-cv--narrative-overhaul-summary)
+10. [Strategic Execution Roadmap (30-60-90 Day Plan)](#10-strategic-execution-roadmap-30-60-90-day-plan)
 
 ---
 
@@ -44,7 +46,79 @@ You are not an operational technician. You are a **Principal Infrastructure Arch
 
 ---
 
-## 2. The 15 Hidden Non-Financial Roles Ranking Matrix
+## 2. Strategic Context: Why Non-Financial Roles Were Audited & The Financial Blind Spot
+
+### The Initial Premise: Escaping the Domestic "Data Center Technician" Trap
+A primary reason the initial matrix focused strictly on **"15 Hidden Non-Financial Roles"** was tactical de-biasing and escaping domestic title stereotyping:
+1. **The Japanese Domestic Recruitment Bottleneck**: In Tokyo's traditional corporate and financial institutions, the title *"Data Center Engineer"* is heavily discounted. Automated ATS platforms and agency headhunters routinely categorize it as low-level physical operations or facility maintenance (racking servers, patching cables, checking UPS alarms) capped at ¥6M–¥9M.
+2. **The "Out-of-Domain" Lateral Exploration Rationale**: Because you spent 10+ years at Japannext Co., Ltd. (Japan's largest PTS venue), staying within standard financial IT felt like the default status-quo. The proposal was deliberately conceived as a *lateral pivot audit* to test how far your rare technical stack—Keio Ph.D. under Internet Hall of Fame pioneer **Prof. Jun Murai** and Quantum Internet pioneer **Prof. Rodney Van Meter**, NPL UK picosecond/nanosecond metrology, NetFPGA line-rate hardware, and petabyte-scale Dell PowerScale storage—could reach into deep-tech frontier industries (such as AI supercomputing, quantum communications, and LEO satellite constellations).
+3. **Finance as Proof-of-Work, Not the Destination**: Your Japannext PTS tenure was leveraged throughout the audit as unassailable proof of mission-critical discipline (zero-downtime, microsecond latency, FSA regulatory compliance), but was treated as the *launchpad* rather than the terminal goal.
+
+### The Critical Strategic Blind Spot: Excluding High-Frequency Trading & Prop Firms
+While steering clear of commoditized retail banking IT is essential, **completely excluding Tier-0 Ultra-Low-Latency Financial Trading & Proprietary Market-Making was a major strategic blind spot**:
+- **Highest Global Compensation**: Tier-1 Proprietary Trading Firms (Prop Shops) and Quantitative Market Makers are the single highest-paying employers in technology globally, paying **$350k – $650k+ (¥50M – ¥100M+)** in total compensation for low-latency network and infrastructure architects—outpaying even foundational AI labs.
+- **Zero Domain-Translation Friction**: Unlike pivoting to satellite astrodynamics or cryo-EM biology, moving to an HFT or quantitative firm requires zero industry translation. You already understand exchange matching engine behavior, exchange colocation cages (e.g., Equinix TY3, ATTokyo CC2), multicast market data feeds (ITCH/FAST), order execution protocols (OUCH/FIX), and FSA financial compliance.
+- **Direct Monetization of Your Rarest Skills**:
+  - **NPL UK Precision Timing (IEEE 1588v2 PTP, SyncE, White Rabbit, rubidium clocks)**: High-frequency trading venues legally require sub-microsecond timestamping under FSA and MiFID II RTS 25 rules. In HFT, nanosecond clock synchronization between network interfaces directly prevents arbitrage race conditions.
+  - **Stanford NetFPGA & Kernel Bypass (Solarflare Onload, EF_VI, DPDK, AF_XDP)**: These are the exact tools HFT firms build their cut-through execution stacks upon.
+  - **Scale-Out Storage (Dell PowerScale / Isilon)**: Quantitative research teams require high-throughput parallel storage to ingest, normalize, and backtest multi-petabyte tick-by-tick order-book datasets across distributed clusters without I/O starvation.
+
+Therefore, this proposal integrates **Tier-0: Ultra-Low-Latency Financial Trading & Market-Making Infrastructure** as the premier, immediate-yield career track alongside the deep-tech frontier options.
+
+---
+
+## 3. Tier-0 Track: Ultra-Low-Latency Financial Trading & Market-Making Infrastructure
+
+### Tier-0 Financial Roles Ranking Matrix
+
+| # | Role Title | Target Industry | Fit (1–10) | Pay Upside (USD / JPY Equiv) | Hiring Demand | Break-In Difficulty |
+|---|------------|-----------------|:---:|:---:|:---:|:---:|
+| **F1** | **Principal Low-Latency Network Architect** | HFT & Prop Trading | **10.0** | **$380k – $650k+** (¥55M – ¥100M+) | High / Hyper-Scarcity | Medium–High (C++ / Packet Screen) |
+| **F2** | **Precision Timing & Synchronization Architect** | HFT & Quantitative Market Makers | **10.0** | **$320k – $550k** (¥45M – ¥80M) | High / Very Rare | Medium |
+| **F3** | **Quantitative Research Platform & HPC Storage Architect** | Multi-Strategy Quant Funds | **9.5** | **$280k – $480k** (¥40M – ¥70M) | High | Low–Medium |
+| **F4** | **Exchange Colocation & Connectivity Engineering Lead** | Global Electronic Market Makers | **10.0** | **$260k – $420k** (¥38M – ¥60M) | Steady / High Demand | Low |
+| **F5** | **Next-Gen Exchange Infrastructure Architect** | Tier-1 Electronic Venues & Exchanges | **10.0** | **$220k – $360k** (¥32M – ¥52M) | Moderate | Low |
+
+---
+
+### Deep-Dive Analysis: The 3 High-Value Financial Segments
+
+#### Segment 1: High-Frequency Trading (HFT) & Proprietary Market Makers
+* **Target Companies**: Jane Street, Citadel Securities, Jump Trading, Optiver, Tower Research Capital, Hudson River Trading (HRT), Flow Traders, DRW, IMC Trading, Virtu Financial.
+* **The Market Need**:
+  In modern electronic trading, profitability is determined at the nanosecond and sub-microsecond scale. Proprietary trading firms invest tens of millions of dollars into custom low-latency Layer-1/Layer-2 switching fabrics (Arista 7130 / MetaWatch), custom FPGA pre-filtering, kernel-bypass network drivers, and PTP grandmaster clock distribution across financial colocation centers (Tokyo TY3/CC2, Singapore SG1, Chicago CME Aurora, London Slough LD4).
+* **Direct Match on Your CV**:
+  - *10+ Years at Japannext PTS*: Deep practical experience operating exchange-side infrastructure, managing broker-dealer participant connectivity, and handling zero-packet-drop requirements.
+  - *National Physical Laboratory (NPL UK) Certifications*: Expertise in Time and Frequency Measurement, oscillator stability, and IEEE 1588v2 PTP network timestamping is an exceptionally rare capability in the Tokyo market.
+  - *NetFPGA & Line-Rate Processing*: Direct familiarity with hardware-based packet filtering and deterministic latency pipelines.
+  - *High-Density Thermal & Power Balancing*: Experience optimizing 50% power distribution across dense server racks prevents power trips in high-draw, liquid-cooled, or overclocked trading servers.
+* **The Interview Pitch**:
+  > *"I have spent over a decade co-managing the physical and network infrastructure of Japan's largest PTS venue. I understand every stage of the packet lifecycle—from exchange matching engine colocation cross-connects and PTP sub-nanosecond timestamping to kernel-bypass reception and petascale tick telemetry. I bring financial-grade reliability combined with deep metrology and packet-level rigor."*
+
+#### Segment 2: Quantitative Hedge Funds & Multi-Strategy Venues
+* **Target Companies**: Two Sigma, Point72, Millennium Management, Balyasny Asset Management (BAM), D.E. Shaw, WorldQuant, Marshall Wace.
+* **The Market Need**:
+  Quantitative researchers and machine learning alpha modelers generate continuous compute and storage workloads on massive time-series financial datasets (Level 2/Level 3 full order book data, dark pool volumes, options flow). A major bottleneck is storage I/O and checkpoint throughput: if researchers cannot read terabytes of tick history in parallel, strategy iteration stalls.
+* **Direct Match on Your CV**:
+  - *Dell PowerScale (Isilon) 50% Throughput Gain*: Proven capability to tune scale-out NAS and distributed file systems to eliminate concurrent I/O bottlenecks.
+  - *Physics & Differential Equations Background (ITB)*: Rigorous foundational training in mathematical modeling, wave propagation, and stochastic processes, giving you natural peer communication with quantitative researchers.
+  - *Keio Ph.D. Distributed Systems Pedigree*: Deep understanding of distributed consistency, swarm architectures, and scale-out computational grids.
+* **The Interview Pitch**:
+  > *"Alpha research is fundamentally an I/O and parallel throughput challenge. Having optimized Dell PowerScale enterprise storage to deliver 50% higher throughput in a tier-1 trading venue, I design high-performance research platforms that keep quantitative backtesting pipelines operating at full pipeline saturation."*
+
+#### Segment 3: Tier-1 Regulated Exchanges & Electronic Venues
+* **Target Companies**: Japan Exchange Group (JPX / Tokyo Stock Exchange), CME Group, Intercontinental Exchange (ICE / NYSE), Singapore Exchange (SGX), Cboe Global Markets, Nasdaq.
+* **The Market Need**:
+  National financial infrastructure operators require senior architectural leadership capable of ensuring 99.999% availability, deterministic matching engine latencies, strict regulatory compliance with financial authorities (Japan FSA, SEC, CFTC), and seamless colocation migrations.
+* **Direct Match on Your CV**:
+  - *Direct Institutional Peer*: Japannext is the primary alternative trading venue competing with JPX in Japanese equity markets. Your 10-year operational record under FSA regulatory compliance makes you an immediate plug-and-play architectural hire.
+  - *Flawless Migration Record*: Delivering zero-downtime server room migrations two weeks ahead of schedule with 50% expansion headroom demonstrates proven executive risk mitigation.
+* **The Interview Pitch**:
+  > *"Having co-managed Japannext PTS infrastructure under strict FSA regulatory constraints with zero downtime, I understand the delicate balance between extreme low-latency performance and absolute operational stability required of national market venues."*
+
+---
+
+## 4. The 15 Hidden Non-Financial Roles Ranking Matrix
 
 The following 15 high-upside roles deliberately venture outside traditional financial exchange operations. They are ranked across four dimensions:
 - **Fit Score (1–10)**: Direct alignment with your current CV evidence without requiring additional degrees.
@@ -72,7 +146,7 @@ The following 15 high-upside roles deliberately venture outside traditional fina
 
 ---
 
-## 3. Deep-Dive Analysis of the 15 Hidden Career Opportunities
+## 5. Deep-Dive Analysis of the 15 Hidden Career Opportunities
 
 ### 01. AI Supercomputing / GPU Cluster Infrastructure Architect
 * **Target Companies**: OpenAI, Anthropic, CoreWeave, Lambda Labs, Sakana AI, Preferred Networks, Crusoe Cloud.
@@ -213,7 +287,7 @@ The following 15 high-upside roles deliberately venture outside traditional fina
 
 ---
 
-## 4. The 26 Transferable Skills Deconstruction (5 Pillars)
+## 6. The 26 Transferable Skills Deconstruction (5 Pillars)
 
 ```mermaid
 mindmap
@@ -289,7 +363,7 @@ mindmap
 
 ---
 
-## 5. The 5 Realistic Career Pivot Paths & 30-Day Transition Blueprints
+## 7. The 5 Realistic Career Pivot Paths & 30-Day Transition Blueprints
 
 ```mermaid
 flowchart TD
@@ -451,10 +525,16 @@ flowchart TD
 
 ---
 
-## 6. The 10 High-Value Non-Financial Industries Ranked
+## 8. The High-Value Industry Ranking Hierarchy (Tier-0 to Tier-3)
 
 ```mermaid
 flowchart TD
+    subgraph Tier0["Tier 0: Ultra-High-Performance Financial Trading & HFT ($350k - $650k+)"]
+        F1["0a. High-Frequency Trading (HFT) & Prop Market Making"]
+        F2["0b. Quantitative Hedge Funds & Petascale Tick Data Venues"]
+        F3["0c. Tier-1 Exchanges & Electronic Market Infrastructure"]
+    end
+
     subgraph Top["Tier 1: High Demand + Immediate Comp ($240k - $380k+)"]
         I1["1. AI Supercomputing & Dedicated GPU Clouds"]
         I2["2. High-Tech Infrastructure Vendor Solutions (Field CTO)"]
@@ -474,13 +554,14 @@ flowchart TD
         I10["10. Smart Grid Synchrophasor Telemetry & SCADA"]
     end
 
-    Top --> Deep --> Scientific
+    Tier0 --> Top --> Deep --> Scientific
 ```
 
 ### Master Comparative Ranking Matrix
 
 | Rank | Target Industry | Hiring Demand | Comp Potential (USD / JPY) | Remote Potential | Career Growth | Entry Leverage | Overall Composite Score |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **00** | **Ultra-Low-Latency Financial Trading & HFT Market Making** | 9.5 / 10 | **$350k – $650k+** (¥50M – ¥100M+) | 6.0 / 10 | 9.5 / 10 | 10.0 / 10 | **9.6 / 10** |
 | **01** | **AI Supercomputing & Dedicated GPU Clouds** | 10 / 10 | **$250k – $380k+** (¥35M – ¥55M+) | 6.5 / 10 | 9.5 / 10 | 8.5 / 10 | **8.9 / 10** |
 | **02** | **High-Tech Infrastructure Vendor Solutions (Field CTO)** | 9.0 / 10 | **$240k – $360k+** (¥34M – ¥52M+) | 8.5 / 10 | 8.5 / 10 | 9.5 / 10 | **8.9 / 10** |
 | **03** | **Edge Cloud, Next-Gen CDN & Real-Time Streaming** | 8.5 / 10 | **$180k – $290k** (¥25M – ¥40M) | 9.5 / 10 | 8.0 / 10 | 9.0 / 10 | **8.8 / 10** |
@@ -493,6 +574,11 @@ flowchart TD
 | **10** | **Smart Grid Synchrophasor Telemetry & Power Metrology** | 7.0 / 10 | **$150k – $230k** (¥21M – ¥32M) | 5.0 / 10 | 8.0 / 10 | 7.0 / 10 | **6.8 / 10** |
 
 ### Strategic Industry Profiles
+
+0. **Ultra-Low-Latency Financial Trading & Prop Market Making (HFT)** (Composite: 9.6/10)
+   - *Target Employers*: Jane Street (Tokyo/HK/SG), Citadel Securities (Tokyo), Jump Trading, Optiver (Singapore/Tokyo), Tower Research Capital, Hudson River Trading (HRT), Flow Traders, DRW.
+   - *Target Roles*: `Principal Low-Latency Network Architect`, `HFT Systems & Colocation Lead`, `Precision Timing (PTP) Architect`.
+   - *Value Proposition*: 10+ years co-managing Japan's premier PTS venue under FSA compliance, NPL UK sub-nanosecond PTP metrology, NetFPGA kernel-bypass experience, and zero-downtime mission-critical delivery.
 
 1. **AI Supercomputing & Dedicated GPU Clouds** (Composite: 8.9/10)
    - *Target Employers*: CoreWeave, Lambda Labs, OpenAI (Tokyo), Anthropic, Sakana AI (Tokyo), Preferred Networks, Crusoe Cloud.
@@ -537,7 +623,7 @@ flowchart TD
 
 ---
 
-## 7. The LaTeX CV & Narrative Overhaul Summary
+## 9. The LaTeX CV & Narrative Overhaul Summary
 
 The entire CV and Resume repository has been restructured, recompiled, and pushed to GitHub:
 
@@ -554,18 +640,18 @@ The entire CV and Resume repository has been restructured, recompiled, and pushe
 
 ---
 
-## 8. Strategic Execution Roadmap (30-60-90 Day Plan)
+## 10. Strategic Execution Roadmap (30-60-90 Day Plan)
 
 ```mermaid
 flowchart TD
     subgraph D30["Days 1 - 30: Digital Alignment & Target Scouting"]
         A1["Update LinkedIn / GitHub Title to Principal Infrastructure Architect"]
-        A2["Build Target List of 25 Tokyo & APAC Companies (AI, Quantum, NewSpace, Telecom)"]
+        A2["Build Target List: Tier-0 HFT/Finance + Top Deep-Tech (Tokyo & APAC)"]
         A3["Extract Rodney Van Meter & Jun Murai Network Connections"]
     end
 
     subgraph D60["Days 31 - 60: Direct Headhunter & Peer Outreach"]
-        B1["Engage Tier-1 Executive Recruiters (Heidrick, Korn Ferry, Specialized Deep-Tech)"]
+        B1["Engage Top HFT Search Boutiques & Tier-1 Exec Recruiters"]
         B2["Pitch Directly to Engineering Directors via Technical Proof Dossier"]
         B3["Prepare 3 Concrete System Design Case Studies (Migration, PDU Telemetry, PowerScale)"]
     end
@@ -573,7 +659,7 @@ flowchart TD
     subgraph D90["Days 61 - 90: Interview Execution & Compensation Negotiation"]
         C1["Execute On-Site Technical Interviews (System Architecture, Kernel Tuning, Storage)"]
         C2["Leverage Trilingual Fluency (EN/JA/ID) for APAC Regional Scopes"]
-        C3["Anchor Compensation Target: $220k - $350k+ (¥30M - ¥50M+ Total Comp)"]
+        C3["Anchor Compensation: $350k - $650k+ (HFT) / $250k - $380k+ (Tech)"]
     end
 
     D30 --> D60 --> D90
@@ -585,6 +671,7 @@ flowchart TD
      `Principal Infrastructure Architect | Low-Latency Systems | Distributed Infrastructure & Storage | Keio Ph.D. (Murai Lab)`
    - Add the 5 core competency pillars directly into your LinkedIn "About" section.
 2. **Target Company Mapping (Tokyo & APAC Remote)**:
+   - *Tier-0 Financial & HFT Market Making*: Jane Street (Tokyo / Hong Kong / Singapore), Citadel Securities (Tokyo), Jump Trading, Optiver (Singapore / Tokyo), Tower Research Capital, Hudson River Trading (HRT), Flow Traders, Japan Exchange Group (JPX).
    - *AI Supercomputing*: Sakana AI (Tokyo), Preferred Networks (Tokyo), CoreWeave (APAC buildout), OpenAI (Tokyo office).
    - *Deep Tech & Quantum*: Keio Quantum Computing Center, RIKEN, AWS Quantum, IonQ.
    - *NewSpace & Aerospace*: Axelspace (Tokyo), Astroscale (Tokyo), Synspective (Tokyo), SpaceX Starlink.
@@ -595,8 +682,9 @@ flowchart TD
    - Reach out to academic contacts connected to **Prof. Jun Murai** and **Prof. Rodney Van Meter**.
 
 ### Days 31 – 60: High-Value Outreach & Interview Case Preparation
-1. **Direct Engineering Outreach**:
-   - Do not apply through generic corporate job portals. Connect directly with **VP of Infrastructure**, **Head of Platform Engineering**, or **Director of Datacenter Operations** on LinkedIn using the customized pitches from Section 3.
+1. **Direct Engineering & Boutique Recruiter Outreach**:
+   - For Tier-0 HFT/Quant roles: Engage premier quantitative trading executive recruiters in Tokyo and Singapore (e.g., GQR Global Markets, Selby Jennings, Oxford Knight, Principle Partners).
+   - For Tech/AI/Vendor roles: Connect directly with **VP of Infrastructure**, **Head of Platform Engineering**, or **Director of Datacenter Operations** on LinkedIn using the customized pitches from Sections 3 and 5.
 2. **Prepare 3 Architecture Case Studies for Interviews**:
    - *Case Study 1 (Physical / Risk)*: The Japannext Server Migration (formulating risk mitigation, executing zero-downtime cutovers, delivering 2 weeks early).
    - *Case Study 2 (Thermal / Efficiency)*: Rack-level PDU telemetry instrumentation and dynamic 50% power balancing under high-density loads.
@@ -608,7 +696,8 @@ flowchart TD
    - Emphasize your ability to bridge low-level physical reality (optics, power, thermals, racks) with high-level software/distributed algorithms (dynamic graphs, PTP timing, parallel file systems).
 2. **Compensation Anchoring**:
    - Refuse to benchmark against local Japanese IT operational salary bands (¥8M–¥12M).
-   - Anchor to global tech / specialized systems compensation:
-     * **Base Salary**: ¥18M – ¥25M ($130k – $180k)
-     * **Total Target Compensation (Base + Bonus + Equity / RSUs)**: **¥28M – ¥45M+ ($200k – $320k+)**
+   - Anchor to global top-tier systems and quantitative trading compensation:
+     * **Base Salary**: ¥22M – ¥35M ($150k – $240k)
+     * **Total Target Compensation (Tier-1 Tech / AI Supercomputing)**: **¥30M – ¥55M+ ($220k – $380k+)**
+     * **Total Target Compensation (Tier-0 HFT / Prop Trading)**: **¥50M – ¥100M+ ($350k – $650k+ Base + Discretionary Performance Bonus / PnL Share)**
    - Leverage your **trilingual fluency (English, Japanese, Indonesian)** to target regional APAC leadership roles that command a 30–50% premium over local roles.
