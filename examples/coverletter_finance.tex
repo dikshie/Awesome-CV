@@ -1,0 +1,116 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Mohamad}{Dikshie Fauzie}
+\position{Principal Low-Latency Infrastructure Architect{\enskip\cdotp\enskip}Electronic Trading \& Distributed Systems}
+\address{Tokyo, Ota-ku, KamataHoncho-1-1-3-804}
+
+\mobile{(+81) 80-5449-2362}
+\email{dikshie@gmail.com}
+\homepage{www.sfc.wide.ad.jp/~dikshie/}
+\github{dikshie}
+\linkedin{dikshie}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Infrastructure Engineering \& Quantitative Trading Team}
+  {Tokyo / APAC}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Principal Low-Latency Infrastructure Architect}
+% How the letter is opened
+\letteropening{Dear Hiring Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mohamad Dikshie Fauzie~~~·~~~Cover Letter (Financial Infrastructure)}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am writing to express my strong interest in the Principal Low-Latency Infrastructure Architect position. Bringing 10+ years of battle-tested production leadership co-managing physical, network, and storage infrastructure for Japannext (Japan's largest Proprietary Trading System / PTS venue) alongside a Ph.D. from Keio University in Distributed Systems (supervised by Internet Hall of Fame founder Prof. Jun Murai and quantum pioneer Prof. Rodney Van Meter), I offer a rare synthesis of physical-layer operational discipline, sub-nanosecond precision timing, and low-latency packet systems engineering.
+
+\lettersection{Exchange Production Track Record}
+Throughout my decade-long tenure at Japannext, I have operated at the core of high-stakes electronic trading governed under strict Japan Financial Services Agency (FSA) compliance and 99.999\% availability requirements. Key production accomplishments include executing an end-to-end datacenter server migration with zero unplanned downtime (delivered 2 weeks ahead of schedule, expanding low-latency matching engine capacity by 50\%), implementing rack-level PDU power telemetry that improved workload power balancing by 50\% (eliminating breaker-trip risks during extreme market volatility), and scaling Dell PowerScale (Isilon) enterprise parallel storage to deliver a 50\% throughput increase for multi-petabyte daily tick data logging, order-book replay, and quantitative backtesting.
+
+\lettersection{Why My Expertise Fits Your Trading Infrastructure}
+In proprietary trading and market making, microsecond and nanosecond advantages directly govern profitability and risk. My technical capabilities directly align with your low-latency infrastructure imperatives: sub-nanosecond clock synchronization (NPL UK certified in Time \& Frequency Metrology, IEEE 1588v2 PTP, SyncE, White Rabbit for FSA/MiFID II clock drift compliance); line-rate hardware acceleration and kernel bypass (Stanford NetFPGA, Solarflare Onload/EF\_VI, DPDK); exchange colocation and optical physical-layer metrology (Equinix TY3, ATTokyo CC2); and mathematical rigor from an ITB Physics degree and NYIF Financial Risk Management certification. I welcome the opportunity to discuss how my expertise can strengthen your firm's competitive trading edge.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
