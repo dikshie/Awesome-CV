@@ -5,9 +5,9 @@
 </h1>
 
 <p align="center">
-  Mohamad Dikshie Fauzie — Data Center & IT Infrastructure Engineer
+  Mohamad Dikshie Fauzie — Principal Infrastructure Architect
   <br />
-  Curriculum Vitae, Résumé, and Cover Letter LaTeX Templates
+  Curriculum Vitae and Résumé LaTeX Templates
 </p>
 
 <div align="center">
@@ -23,9 +23,6 @@
   <a href="https://github.com/dikshie/Awesome-CV/releases/latest/download/cv.pdf">
     <img alt="CV PDF" src="https://img.shields.io/badge/cv-pdf-green.svg" />
   </a>
-  <a href="https://github.com/dikshie/Awesome-CV/releases/latest/download/coverletter.pdf">
-    <img alt="Cover Letter PDF" src="https://img.shields.io/badge/coverletter-pdf-green.svg" />
-  </a>
 </div>
 
 <br />
@@ -35,7 +32,6 @@
 This repository maintains the LaTeX sources and automated build/release pipeline for:
 * **Résumé**: [`examples/resume.tex`](examples/resume.tex) ([Download PDF](https://github.com/dikshie/Awesome-CV/releases/latest/download/resume.pdf))
 * **Curriculum Vitae (CV)**: [`examples/cv.tex`](examples/cv.tex) ([Download PDF](https://github.com/dikshie/Awesome-CV/releases/latest/download/cv.pdf))
-* **Cover Letter**: [`examples/coverletter.tex`](examples/coverletter.tex) ([Download PDF](https://github.com/dikshie/Awesome-CV/releases/latest/download/coverletter.pdf))
 
 For detailed workflow documentation, local compilation, and release instructions, refer to [**WORKFLOW.md**](WORKFLOW.md).
 
@@ -49,13 +45,6 @@ For detailed workflow documentation, local compilation, and release instructions
 | Page 1 | Page 2 |
 |:---:|:---:|
 | [![Résumé Page 1](examples/resume-0.png)](https://github.com/dikshie/Awesome-CV/releases/latest/download/resume.pdf) | [![Résumé Page 2](examples/resume-1.png)](https://github.com/dikshie/Awesome-CV/releases/latest/download/resume.pdf) |
-
-#### Cover Letter
-[Download Latest PDF](https://github.com/dikshie/Awesome-CV/releases/latest/download/coverletter.pdf)
-
-| Cover Letter |
-|:---:|
-| [![Cover Letter](examples/coverletter-1.png)](https://github.com/dikshie/Awesome-CV/releases/latest/download/coverletter.pdf) |
 
 ---
 
@@ -74,7 +63,7 @@ make all
 # Build individual documents
 make resume
 make cv
-make coverletter
+make finance
 
 # Force clean rebuild
 make -B all
@@ -96,7 +85,7 @@ make docker-all
 
 ## Automated Releases
 
-Pushing an annotated git tag automatically triggers the GitHub Actions release workflow to compile the documents and attach `resume.pdf`, `cv.pdf`, and `coverletter.pdf` to a new release:
+Pushing an annotated git tag automatically triggers the GitHub Actions release workflow to compile the documents and attach `resume.pdf` and `cv.pdf` to a new release:
 
 ```bash
 git tag v1.0.1 -m "Release v1.0.1"
