@@ -1,0 +1,113 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\name{Mohamad}{Dikshie Fauzie}
+\position{Forward Deployed Engineer{\enskip\cdotp\enskip}Applied AI, Agentic Systems \& Cloud Solutions}
+\address{Tokyo, Ota-ku, KamataHoncho-1-1-3-804}
+
+\mobile{(+81) 80-5449-2362}
+\email{dikshie@gmail.com}
+\homepage{www.sfc.wide.ad.jp/~dikshie/}
+\github{dikshie}
+\linkedin{dikshie}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Hiring Team \& Engineering Leadership}
+  {Prodapt Japan GK\\Tokyo, Japan}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for Forward Deployed Engineer (FDE)}
+% How the letter is opened
+\letteropening{Dear Hiring Team at Prodapt Japan GK,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae / Resume}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Mohamad Dikshie Fauzie~~~·~~~Cover Letter (Forward Deployed Engineer)}
+  {}
+
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am writing to express my strong enthusiasm for the Forward Deployed Engineer (FDE) position at Prodapt Japan GK. Bringing 10+ years of production engineering leadership co-managing mission-critical systems at Japan's largest alternative trading venue (Japannext PTS) alongside a Ph.D. in Distributed Systems from Keio University (supervised by Internet Hall of Fame pioneer Prof. Jun Murai), I specialize in bridging complex client business objectives with scalable, production-grade technical execution. Based in Tokyo with fluent English and business-level Japanese proficiency, I am excited by Prodapt's mission to deploy robust, AI-powered applications directly into enterprise client workflows.
+
+\lettersection{Customer Delivery \& Production Track Record}
+Throughout my career, I have operated in high-stakes forward-deployed capacities, collaborating directly with enterprise clients, institutional broker-dealers, and global engineering partners. At Japannext, I translated ambiguous operational demands and stringent regulatory constraints into turnkey Python automation services, custom REST APIs, and automated telemetry systems that eliminated manual reporting overhead. I directed high-pressure infrastructure transformations, including zero-downtime migrations delivered two weeks ahead of schedule and enterprise storage implementations that boosted I/O throughput by 50\%, instilling in me a deep commitment to delivery velocity, customer alignment, and production reliability.
+
+\lettersection{Why My Expertise Fits Prodapt's FDE Mandate}
+In parallel with my systems leadership, I have actively developed and deployed applied AI and cloud-native solutions. I have designed and deployed end-to-end Retrieval-Augmented Generation (RAG) pipelines---optimizing document ingestion, dense vector embeddings, hybrid search, and cross-encoder reranking---alongside multi-agent task orchestration architectures with dynamic tool integration and automated evaluation benchmarks. Backed by credentials in NVIDIA AI Infrastructure, AWS Cloud, and Google Project Management, I bring hands-on experience implementing LLMOps lifecycle workflows, model evaluation frameworks, and telemetry observability (Prometheus/Grafana) in containerized environments. I welcome the opportunity to discuss how my technical depth, bilingual communication, and forward-deployed problem-solving mindset can deliver immediate value to Prodapt Japan GK and its enterprise clients.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

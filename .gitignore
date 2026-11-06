@@ -33,3 +33,6 @@
 .agent/
 .agents/
 
+### Confidential directory
+pdf_from_hunter/
+

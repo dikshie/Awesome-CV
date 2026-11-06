@@ -1,13 +1,15 @@
-.PHONY: all examples resume cv coverletter resume_finance cv_finance coverletter_finance finance clean docker-build docker-all docker-resume docker-cv docker-coverletter docker-finance docker-clean
+.PHONY: all examples resume cv coverletter resume_finance cv_finance coverletter_finance finance resume_fde cv_fde coverletter_fde fde clean docker-build docker-all docker-resume docker-cv docker-coverletter docker-finance docker-clean
 
-CC = xelatex
+CC = xelatex -interaction=nonstopmode
 EXAMPLES_DIR = examples
 RESUME_DIR = examples/resume
 CV_DIR = examples/cv
 FINANCE_DIR = examples/finance
+FDE_DIR = examples/fde
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 FINANCE_SRCS = $(shell find $(FINANCE_DIR) -name '*.tex')
+FDE_SRCS = $(shell find $(FDE_DIR) -name '*.tex')
 
 # Docker configuration
 DOCKER_IMAGE ?= awesome-cv:latest
@@ -15,7 +17,7 @@ DOCKER_RUN = docker run --rm -u $$(id -u):$$(id -g) -v "$$(pwd)":/workdir $(DOCK
 
 all: examples
 
-examples: $(foreach x, coverletter cv resume coverletter_finance cv_finance resume_finance, $(EXAMPLES_DIR)/$x.pdf)
+examples: $(foreach x, coverletter cv resume coverletter_finance cv_finance resume_finance coverletter_fde cv_fde resume_fde, $(EXAMPLES_DIR)/$x.pdf)
 
 resume: $(EXAMPLES_DIR)/resume.pdf
 cv: $(EXAMPLES_DIR)/cv.pdf
@@ -25,6 +27,11 @@ resume_finance: $(EXAMPLES_DIR)/resume_finance.pdf
 cv_finance: $(EXAMPLES_DIR)/cv_finance.pdf
 coverletter_finance: $(EXAMPLES_DIR)/coverletter_finance.pdf
 finance: cv_finance resume_finance coverletter_finance
+
+resume_fde: $(EXAMPLES_DIR)/resume_fde.pdf
+cv_fde: $(EXAMPLES_DIR)/cv_fde.pdf
+coverletter_fde: $(EXAMPLES_DIR)/coverletter_fde.pdf
+fde: cv_fde resume_fde coverletter_fde
 
 $(EXAMPLES_DIR)/resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
@@ -42,6 +49,15 @@ $(EXAMPLES_DIR)/cv_finance.pdf: $(EXAMPLES_DIR)/cv_finance.tex $(FINANCE_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 $(EXAMPLES_DIR)/coverletter_finance.pdf: $(EXAMPLES_DIR)/coverletter_finance.tex
+	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+
+$(EXAMPLES_DIR)/resume_fde.pdf: $(EXAMPLES_DIR)/resume_fde.tex $(FDE_SRCS)
+	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+
+$(EXAMPLES_DIR)/cv_fde.pdf: $(EXAMPLES_DIR)/cv_fde.tex $(FDE_SRCS)
+	$(CC) -output-directory=$(EXAMPLES_DIR) $<
+
+$(EXAMPLES_DIR)/coverletter_fde.pdf: $(EXAMPLES_DIR)/coverletter_fde.tex
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 clean:
